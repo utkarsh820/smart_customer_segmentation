@@ -1,0 +1,43 @@
+[tool.poetry]
+name = "smart-customer-segmentation"
+version = "0.1.0"
+description = "This project uses unsupervised learning methods, mostly K-Means clustering, to put customers into useful groups. By looking at transaction data and customer profiles."
+authors = ["Utkarsh Pandey"]
+license = "MIT"
+readme = "README.md"
+packages = [
+    { include = "src" }
+]
+
+[tool.poetry.dependencies]
+python = ">=3.12,<3.13"
+pandas = ">=2.3.3,<3.0.0"
+numpy = ">=2.3.4,<3.0.0"
+scikit-learn = ">=1.7.2,<2.0.0"
+matplotlib = ">=3.10.7,<4.0.0"
+seaborn = ">=0.13.2,<0.14.0"
+plotly = ">=5.10.0,<6.0.0"
+statsmodels = ">=0.14.5,<0.15.0"
+kneed = ">=0.8.5,<0.9.0"
+xgboost = ">=3.1.1,<4.0.0"
+catboost = ">=1.2.8,<2.0.0"
+pymongo = "^4.15.3"
+python-dotenv = "^1.2.1"
+pyyaml = "^6.0.3"
+from-root = "^1.3.0"
+certifi = "^2025.10.5"
+imblearn = "^0.0"
+b2sdk = "^2.10.1"
+dill = "^0.4.0"
+dnspython = "^2.8.0"
+streamlit = "^1.51.0"
+imbalanced-learn = "^0.14.0"
+neuro-mf = "^0.0.5"
+evidently = "^0.7.15"
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = ">=7.1.0,<8.0.0"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"

@@ -1,0 +1,6 @@
+import os
+
+DEFAULT_BUCKET_NAME = "customer0"
+
+BUCKET_NAME = os.getenv("B2_BUCKET_NAME", DEFAULT_BUCKET_NAME)
+MODEL_FILE_NAME = "model.pkl"
